@@ -41,7 +41,7 @@ export default function Hero() {
           
           <div className="flex justify-center lg:justify-end">
             <img
-              src="../assets/banner-stack.png"
+              src="./public/bannerstack.png"
               alt="Development Stack Illustration"
               className="w-full max-w-md lg:max-w-lg object-contain"
             />
