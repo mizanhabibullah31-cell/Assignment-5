@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           
-          {/* Left Content Column */}
+          
           <div className="text-left max-w-xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1]">
               Build Your Ideal{" "}
@@ -21,7 +21,7 @@ export default function Hero() {
               next project.
             </p>
 
-            {/* CTA Buttons */}
+            
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a
                 href="#technologies"
@@ -38,7 +38,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Image/Illustration Column */}
+          
           <div className="flex justify-center lg:justify-end">
             <img
               src="./assets/banner-stack.png"

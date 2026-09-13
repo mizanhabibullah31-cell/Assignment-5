@@ -13,7 +13,7 @@ export default function StackSidebar({
 }: StackSidebarProps) {
   return (
     <div className="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm sticky top-6 w-full max-w-xs">
-      {/* Header Section */}
+      
       <div className="mb-5">
         <h3 className="font-bold text-xl text-slate-900 tracking-tight">
           Your Stack
@@ -24,7 +24,7 @@ export default function StackSidebar({
         </p>
       </div>
 
-      {/* Selected Items Container */}
+      
       {stack.length === 0 ? (
         <div className="text-center py-8 px-2 border-2 border-dashed border-slate-100 rounded-2xl mb-5">
           <p className="text-xs text-slate-400 font-medium">
@@ -61,7 +61,7 @@ export default function StackSidebar({
                 </div>
               </div>
 
-              {/* Remove item 'X' button */}
+              
               <button
                 onClick={() => onRemove(item.id)}
                 className="text-slate-300 hover:text-slate-500 transition-colors p-1 shrink-0 ml-2"
@@ -86,7 +86,7 @@ export default function StackSidebar({
         </div>
       )}
 
-      {/* Bottom Full-Width "Remove All" Button */}
+      
       {stack.length > 0 && (
         <button
           onClick={onRemoveAll}

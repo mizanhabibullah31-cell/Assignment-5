@@ -1,10 +1,9 @@
-// import React from "react";
 import type { Technology } from "../type";
 
 export interface ExtendedTechnology extends Omit<Technology, "rating"> {
-  badge?: string; // e.g., "Robust" for Java, "Popular", "Fast", etc.
-  badgeColor?: string; // Custom color override if needed
-  rating?: number; // e.g., 4.6 for Java
+  badge?: string;
+  badgeColor?: string; 
+  rating?: number; 
 }
 
 interface TechCardProps {
@@ -17,7 +16,6 @@ export default function TechCard({ tech, isSelected, onAdd }: TechCardProps) {
   return (
     <div className="bg-white rounded-2xl p-6 border border-gray-100/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative">
       
-      {/* Top Header: Icon & Badge */}
       <div>
         <div className="flex items-center justify-between min-h-8 mb-4">
           <div className="w-8 h-8 flex items-center justify-center">
@@ -35,14 +33,14 @@ export default function TechCard({ tech, isSelected, onAdd }: TechCardProps) {
           )}
         </div>
 
-        {/* Name & Description */}
+       
         <h3 className="text-lg font-bold text-slate-900">{tech.name}</h3>
         <p className="text-xs text-slate-500 mt-2 leading-relaxed line-clamp-3 min-h-12">
           {tech.description}
         </p>
       </div>
 
-      {/* Footer Area: Meta Tags & Full-Width Dark Button */}
+      
       <div className="mt-6">
         <div className="flex items-center justify-between text-xs text-slate-500 mb-4">
           <div className="flex items-center space-x-2">
@@ -62,7 +60,7 @@ export default function TechCard({ tech, isSelected, onAdd }: TechCardProps) {
           )}
         </div>
 
-        {/* Full-width dark button */}
+    
         <button
           onClick={() => onAdd(tech)}
           disabled={isSelected}

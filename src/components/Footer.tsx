@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
           
-          {/* Brand Column */}
+         
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center space-x-2.5">
               <div className="w-7 h-7 rounded-md bg-linear-to-r from-pink-500 to-purple-600 flex items-center justify-center text-white font-bold text-xs shadow-sm">
@@ -19,7 +19,7 @@ export default function Footer() {
               Curated tools, technologies, and resources for developers building modern software.
             </p>
 
-            {/* Social Links */}
+           
             <div className="flex items-center space-x-5 pt-2 font-medium text-slate-700">
               <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-slate-900 transition-colors">
                 GitHub
@@ -33,7 +33,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Navigation Links Columns */}
+          
           <div className="md:col-span-7 grid grid-cols-3 gap-6">
             {/* Product Column */}
             <div>
@@ -59,7 +59,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Company Column */}
+            
             <div>
               <h4 className="font-bold text-slate-900 tracking-wider text-[11px] uppercase mb-4">
                 Company
@@ -83,7 +83,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Legal Column */}
+            
             <div>
               <h4 className="font-bold text-slate-900 tracking-wider text-[11px] uppercase mb-4">
                 Legal
@@ -105,7 +105,7 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom Copyright Bar */}
+      
         <div className="mt-12 pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-slate-400 gap-4">
           <p>© 2026 Dev Stack. All rights reserved.</p>
           <div className="flex items-center space-x-6 font-medium">

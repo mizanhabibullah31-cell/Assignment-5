@@ -14,7 +14,6 @@ function App() {
   const [stack, setStack] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Fetch JSON data dynamically
   useEffect(() => {
     fetch('/technologies.json')
       .then((res) => res.json())
@@ -28,7 +27,7 @@ function App() {
       });
   }, []);
 
-  // Add item to stack logic
+
   const handleAddToStack = (tech) => {
     const exists = stack.some((item) => item.id === tech.id);
     if (exists) {
@@ -46,7 +45,7 @@ function App() {
     });
   };
 
-  // Remove single item logic
+
   const handleRemoveFromStack = (id) => {
     const itemToRemove = stack.find((item) => item.id === id);
     setStack(stack.filter((item) => item.id !== id));
@@ -58,7 +57,6 @@ function App() {
     }
   };
 
-  // Remove all items logic
   const handleRemoveAll = () => {
     setStack([]);
     toast.error('Cleared all items from your stack', {
@@ -89,7 +87,6 @@ function App() {
             <Loader />
           ) : (
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-              {/* Technology Grid (3 Columns on Desktop, 2 on Tablet, 1 on Mobile) */}
               <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {technologies.map((tech) => (
                   <TechCard
@@ -101,7 +98,6 @@ function App() {
                 ))}
               </div>
 
-              {/* Sidebar (1 Column) */}
               <div className="lg:col-span-1">
                 <StackSidebar
                   stack={stack}
